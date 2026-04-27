@@ -224,5 +224,68 @@
   "contact.hours":      "Mon – Sun: 07:00 – 22:00",
 
   "form.success": "Thank you! We will get back to you shortly.",
-  "form.error":   "Something went wrong. Please try again."
+  "form.error":   "Something went wrong. Please try again.",
+
+  "home.stats.courts":     "Clay Courts",
+  "home.stats.members":    "Members",
+  "home.stats.experience": "Years Experience",
+  "home.stats.coaches":    "Coaches",
+
+  "courts.tag":                 "Clay",
+  "courts.price.title":         "Pricing & Hours",
+  "courts.price.hours.title":   "Opening Hours",
+  "courts.price.hours.detail":  "Monday – Sunday, 07:00 – 22:00",
+  "courts.price.cost.title":    "Pricing",
+  "courts.price.clay_rate":     "Clay court: 6 €/hour",
+  "courts.price.res.title":     "Reservations",
+  "courts.price.res.detail":    "Online or by phone. Cancel up to 2 hours before.",
+
+  "res.select_time":  "— Select time —",
+  "res.courts_label": "Courts",
+  "res.courts_all":   "Courts 1, 2 & 3",
+  "res.courts_rate":  "Clay — 6 €/hour",
+  "res.tip.title":    "💡 Tip",
+  "res.tip.text":     "Club members get priority bookings up to 7 days in advance.",
+  "res.tip.link":     "Learn more about membership →",
+
+  "months.jan": "January",  "months.feb": "February", "months.mar": "March",
+  "months.apr": "April",    "months.may": "May",       "months.jun": "June",
+  "months.jul": "July",     "months.aug": "August",    "months.sep": "September",
+  "months.oct": "October",  "months.nov": "November",  "months.dec": "December",
+  "months.MAY": "MAY",      "months.JUN": "JUN",
+
+  "tour.select_event":     "— Select tournament —",
+  "tour.spring_2026":      "Spring City Tournament 2026 (May 12)",
+  "tour.kids_2026":        "Kids Tournament U12 (May 26)",
+  "tour.mixed_2026":       "Mixed Doubles — Summer Edition (June 14)",
+  "tour.col.tournament":   "Tournament",
+  "tour.col.category":     "Category",
+  "tour.cat.men_single":   "Men's Singles",
+  "tour.cat.women_single": "Women's Singles",
+  "tour.cat.men_double":   "Men's Doubles",
+  "tour.cat.mixed":        "Mixed Doubles",
+  "tour.cat.kids_u12":     "Kids U12",
+  "tour.cat.kids_u16":     "Kids U16",
+  "tour.venue":            "TC Pazardzhik",
+  "tour.cups_medals":      "Cups & medals",
+
+  "contact.select_subject":   "— Select subject —",
+  "contact.subj.reservation": "Reservation",
+  "contact.subj.membership":  "Membership",
+  "contact.subj.kids":        "Kids Training",
+  "contact.subj.tournament":  "Tournaments",
+  "contact.subj.other":       "Other",
+  "contact.label.address":    "Address",
+  "contact.label.phone":      "Phone",
+  "contact.label.email":      "Email",
+  "contact.label.hours":      "Opening Hours",
+  "contact.open_maps":        "🗺️ Open in Google Maps",
+
+  "about.cta.h":    "Ready to Play?",
+  "about.cta.text": "Book a court or join a membership — just a few clicks.",
+
+  "mem.cta.text": "Contact us for more information or send an inquiry directly.",
+
+  "footer.col.club":     "Club",
+  "footer.col.services": "Services"
 }

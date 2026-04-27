@@ -75,13 +75,13 @@
       <div class="tournament-card">
         <div class="tournament-card__date">
           <div class="tournament-card__date-day">12</div>
-          <div class="tournament-card__date-month">МАЙ</div>
+          <div class="tournament-card__date-month" data-i18n="months.MAY">МАЙ</div>
         </div>
         <div class="tournament-card__info">
-          <div class="tournament-card__name">🏆 Пролетен Градски Турнир 2026</div>
+          <div class="tournament-card__name">🏆 <span data-i18n="tour.spring_2026">Пролетен Градски Турнир 2026</span></div>
           <div class="tournament-card__meta">
-            <span>📍 ТК Пазарджик</span>
-            <span>👥 Мъже единично</span>
+            <span>📍 <span data-i18n="tour.venue">ТК Пазарджик</span></span>
+            <span>👥 <span data-i18n="tour.cat.men_single">Мъже единично</span></span>
             <span>💰 256 € награден фонд</span>
             <span style="color:var(--green);">✅ 8 <span data-i18n="tour.spots">свободни места</span></span>
           </div>
@@ -92,14 +92,14 @@
       <div class="tournament-card">
         <div class="tournament-card__date">
           <div class="tournament-card__date-day">26</div>
-          <div class="tournament-card__date-month">МАЙ</div>
+          <div class="tournament-card__date-month" data-i18n="months.MAY">МАЙ</div>
         </div>
         <div class="tournament-card__info">
-          <div class="tournament-card__name">👦 Детски Турнир — до 12 год.</div>
+          <div class="tournament-card__name">👦 <span data-i18n="tour.kids_2026">Детски Турнир — до 12 год.</span></div>
           <div class="tournament-card__meta">
-            <span>📍 ТК Пазарджик</span>
-            <span>👥 Деца до 12 год.</span>
-            <span>🎁 Купи и медали</span>
+            <span>📍 <span data-i18n="tour.venue">ТК Пазарджик</span></span>
+            <span>👥 <span data-i18n="tour.cat.kids_u12">Деца до 12 год.</span></span>
+            <span>🎁 <span data-i18n="tour.cups_medals">Купи и медали</span></span>
             <span style="color:var(--orange);">⏳ 4 <span data-i18n="tour.spots">свободни места</span></span>
           </div>
         </div>
@@ -109,13 +109,13 @@
       <div class="tournament-card">
         <div class="tournament-card__date">
           <div class="tournament-card__date-day">14</div>
-          <div class="tournament-card__date-month">ЮНИ</div>
+          <div class="tournament-card__date-month" data-i18n="months.JUN">ЮНИ</div>
         </div>
         <div class="tournament-card__info">
-          <div class="tournament-card__name">🤝 Двойки микст — Лятно издание</div>
+          <div class="tournament-card__name">🤝 <span data-i18n="tour.mixed_2026">Двойки микст — Лятно издание</span></div>
           <div class="tournament-card__meta">
-            <span>📍 ТК Пазарджик</span>
-            <span>👫 Микст двойки</span>
+            <span>📍 <span data-i18n="tour.venue">ТК Пазарджик</span></span>
+            <span>👫 <span data-i18n="tour.cat.mixed">Микст двойки</span></span>
             <span>💰 153 € награден фонд</span>
             <span style="color:var(--green);">✅ 12 <span data-i18n="tour.spots">свободни места</span></span>
           </div>
@@ -150,21 +150,21 @@
           <div class="form-group">
             <label data-i18n="tour.reg.event">Турнир</label>
             <select name="event" required>
-              <option value="">— Изберете турнир —</option>
-              <option value="spring2026">Пролетен Градски Турнир 2026 (12 май)</option>
-              <option value="kids2026">Детски Турнир до 12 год. (26 май)</option>
-              <option value="mixed2026">Двойки микст — Лятно издание (14 юни)</option>
+              <option value="" data-i18n="tour.select_event">— Изберете турнир —</option>
+              <option value="spring2026" data-i18n="tour.spring_2026">Пролетен Градски Турнир 2026 (12 май)</option>
+              <option value="kids2026"   data-i18n="tour.kids_2026">Детски Турнир до 12 год. (26 май)</option>
+              <option value="mixed2026"  data-i18n="tour.mixed_2026">Двойки микст — Лятно издание (14 юни)</option>
             </select>
           </div>
           <div class="form-group">
             <label data-i18n="tour.reg.category">Категория</label>
             <select name="category">
-              <option value="men-single">Мъже единично</option>
-              <option value="women-single">Жени единично</option>
-              <option value="men-double">Мъже двойки</option>
-              <option value="mixed">Микст двойки</option>
-              <option value="kids-u12">Деца до 12 год.</option>
-              <option value="kids-u16">Деца до 16 год.</option>
+              <option value="men-single"   data-i18n="tour.cat.men_single">Мъже единично</option>
+              <option value="women-single" data-i18n="tour.cat.women_single">Жени единично</option>
+              <option value="men-double"   data-i18n="tour.cat.men_double">Мъже двойки</option>
+              <option value="mixed"        data-i18n="tour.cat.mixed">Микст двойки</option>
+              <option value="kids-u12"     data-i18n="tour.cat.kids_u12">Деца до 12 год.</option>
+              <option value="kids-u16"     data-i18n="tour.cat.kids_u16">Деца до 16 год.</option>
             </select>
           </div>
           <button type="submit" class="btn btn--primary btn--full btn--lg" data-i18n="tour.reg.submit">Изпрати записване</button>
@@ -183,45 +183,45 @@
         <thead>
           <tr>
             <th data-i18n="tour.date">Дата</th>
-            <th>Турнир</th>
-            <th>Категория</th>
+            <th data-i18n="tour.col.tournament">Турнир</th>
+            <th data-i18n="tour.col.category">Категория</th>
             <th data-i18n="tour.winner">Победител</th>
             <th data-i18n="tour.prize">Награда</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>Април 2026</td>
+            <td><span data-i18n="months.apr">Април</span> 2026</td>
             <td>Великденски турнир</td>
-            <td>Мъже единично</td>
+            <td data-i18n="tour.cat.men_single">Мъже единично</td>
             <td>🥇 Петър Стоянов</td>
             <td>153 €</td>
           </tr>
           <tr>
-            <td>Март 2026</td>
+            <td><span data-i18n="months.mar">Март</span> 2026</td>
             <td>Зимен турнир — Зала</td>
-            <td>Микст двойки</td>
+            <td data-i18n="tour.cat.mixed">Микст двойки</td>
             <td>🥇 Ана Г. / Тодор П.</td>
             <td>102 €</td>
           </tr>
           <tr>
-            <td>Ноември 2025</td>
+            <td><span data-i18n="months.nov">Ноември</span> 2025</td>
             <td>Есенен турнир 2025</td>
-            <td>Мъже единично</td>
+            <td data-i18n="tour.cat.men_single">Мъже единично</td>
             <td>🥇 Иван Петров</td>
             <td>256 €</td>
           </tr>
           <tr>
-            <td>Септември 2025</td>
+            <td><span data-i18n="months.sep">Септември</span> 2025</td>
             <td>Детски купон — лято</td>
-            <td>Деца до 12 год.</td>
+            <td data-i18n="tour.cat.kids_u12">Деца до 12 год.</td>
             <td>🥇 Мартин Д.</td>
             <td>Купа + медал</td>
           </tr>
           <tr>
-            <td>Май 2025</td>
+            <td><span data-i18n="months.may">Май</span> 2025</td>
             <td>Пролетен Градски Турнир</td>
-            <td>Мъже единично</td>
+            <td data-i18n="tour.cat.men_single">Мъже единично</td>
             <td>🥇 Стефан Колев</td>
             <td>256 €</td>
           </tr>
@@ -240,7 +240,7 @@
         <p data-i18n="footer.tagline">Спорт. Общност. Страст.</p>
       </div>
       <div class="footer__col">
-        <h4>Клуб</h4>
+        <h4 data-i18n="footer.col.club">Клуб</h4>
         <ul>
           <li><a href="about.html"   data-i18n="nav.about">За клуба</a></li>
           <li><a href="courts.html"  data-i18n="nav.courts">Кортове</a></li>
@@ -248,7 +248,7 @@
         </ul>
       </div>
       <div class="footer__col">
-        <h4>Услуги</h4>
+        <h4 data-i18n="footer.col.services">Услуги</h4>
         <ul>
           <li><a href="reservations.html" data-i18n="nav.reservations">Резервации</a></li>
           <li><a href="membership.html"   data-i18n="nav.membership">Членство</a></li>

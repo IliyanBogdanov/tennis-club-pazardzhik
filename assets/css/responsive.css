@@ -109,13 +109,38 @@
   .why-join__grid { grid-template-columns: 1fr; gap: 16px; }
 }
 
+@media (max-width: 768px) {
+  /* Hero: don't force 100vh on mobile — content can be taller */
+  .hero { min-height: unset !important; padding-top: calc(var(--nav-height) + 40px) !important; padding-bottom: 48px !important; }
+
+  /* Membership CTA strip */
+  .why-join__grid { gap: 12px; }
+
+  /* Kids section */
+  .kids-section { padding: 48px 0; }
+  .kids-section__price-card { margin: 0 auto; }
+
+  /* FAQ */
+  .faq { padding: 0; }
+  .faq__question { font-size: 0.95rem; padding: 16px 18px; }
+  .faq__answer { padding: 0 18px; }
+
+  /* Float book button — raise above mobile browser nav */
+  .float-book { bottom: 72px; }
+}
+
 @media (max-width: 480px) {
   .quick-book__fields { grid-template-columns: 1fr; }
   .quick-book__btn    { grid-column: auto; }
 
-  .hero__quick-book { padding: 16px; margin-top: 24px; }
+  .hero__quick-book { padding: 16px; margin-top: 20px; }
 
   /* Hide float-book label on very small screens, show only icon */
   .float-book .float-book__label { display: none; }
-  .float-book { padding: 13px 16px; }
+  .float-book { padding: 13px 16px; bottom: 68px; }
+
+  /* Tournament cards: tighter on mobile */
+  .tournament-card { gap: 12px; padding: 16px; }
+  .tournament-card__date { min-width: 52px; }
+  .tournament-card__date-day { font-size: 1.5rem; }
 }

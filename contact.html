@@ -88,12 +88,12 @@
           <div class="form-group">
             <label data-i18n="contact.subject">Тема</label>
             <select name="subject">
-              <option value="">— Изберете тема —</option>
-              <option value="reservation">Резервация</option>
-              <option value="membership">Членство</option>
-              <option value="kids">Детски тренировки</option>
-              <option value="tournament">Турнири</option>
-              <option value="other">Друго</option>
+              <option value="" data-i18n="contact.select_subject">— Изберете тема —</option>
+              <option value="reservation" data-i18n="contact.subj.reservation">Резервация</option>
+              <option value="membership"  data-i18n="contact.subj.membership">Членство</option>
+              <option value="kids"        data-i18n="contact.subj.kids">Детски тренировки</option>
+              <option value="tournament"  data-i18n="contact.subj.tournament">Турнири</option>
+              <option value="other"       data-i18n="contact.subj.other">Друго</option>
             </select>
           </div>
           <div class="form-group">
@@ -111,7 +111,7 @@
         <div class="contact-item">
           <div class="contact-item__icon">📍</div>
           <div class="contact-item__text">
-            <h4>Адрес</h4>
+            <h4 data-i18n="contact.label.address">Адрес</h4>
             <p data-i18n="contact.address">Мирянци, Пазарджик 4400</p>
           </div>
         </div>
@@ -119,7 +119,7 @@
         <div class="contact-item">
           <div class="contact-item__icon">📞</div>
           <div class="contact-item__text">
-            <h4>Телефон</h4>
+            <h4 data-i18n="contact.label.phone">Телефон</h4>
             <p><a href="tel:+35988750534" data-i18n="contact.phone">+359 88 750 0534</a></p>
           </div>
         </div>
@@ -127,7 +127,7 @@
         <div class="contact-item">
           <div class="contact-item__icon">✉️</div>
           <div class="contact-item__text">
-            <h4>Имейл</h4>
+            <h4 data-i18n="contact.label.email">Имейл</h4>
             <p><a href="mailto:silviatennis@mail.bg" data-i18n="contact.email_val">silviatennis@mail.bg</a></p>
           </div>
         </div>
@@ -135,7 +135,7 @@
         <div class="contact-item">
           <div class="contact-item__icon">🕐</div>
           <div class="contact-item__text">
-            <h4>Работно време</h4>
+            <h4 data-i18n="contact.label.hours">Работно време</h4>
             <p data-i18n="contact.hours">Пон – Нед: 07:00 – 22:00</p>
           </div>
         </div>
@@ -152,7 +152,7 @@
             title="Тенис Клуб Пазарджик — с. Мирянци">
           </iframe>
         </div>
-        <a href="https://maps.google.com/?q=Miryantsi,+4443,+Pazardzhik,+Bulgaria" target="_blank" rel="noopener" class="btn btn--secondary btn--sm" style="margin-top:10px;display:inline-block;">🗺️ Отвори в Google Maps</a>
+        <a href="https://maps.google.com/?q=Miryantsi,+4443,+Pazardzhik,+Bulgaria" target="_blank" rel="noopener" class="btn btn--secondary btn--sm" style="margin-top:10px;display:inline-block;" data-i18n="contact.open_maps">🗺️ Отвори в Google Maps</a>
       </div>
     </div>
   </div>
@@ -167,7 +167,7 @@
         <p data-i18n="footer.tagline">Спорт. Общност. Страст.</p>
       </div>
       <div class="footer__col">
-        <h4>Клуб</h4>
+        <h4 data-i18n="footer.col.club">Клуб</h4>
         <ul>
           <li><a href="about.html"   data-i18n="nav.about">За клуба</a></li>
           <li><a href="courts.html"  data-i18n="nav.courts">Кортове</a></li>
@@ -175,7 +175,7 @@
         </ul>
       </div>
       <div class="footer__col">
-        <h4>Услуги</h4>
+        <h4 data-i18n="footer.col.services">Услуги</h4>
         <ul>
           <li><a href="reservations.html" data-i18n="nav.reservations">Резервации</a></li>
           <li><a href="membership.html"   data-i18n="nav.membership">Членство</a></li>

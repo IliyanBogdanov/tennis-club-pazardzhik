@@ -224,5 +224,67 @@
   "contact.hours":      "Пон – Нед: 07:00 – 22:00",
 
   "form.success": "Благодарим! Ще се свържем с вас скоро.",
-  "form.error":   "Нещо се обърка. Моля, опитайте отново."
+  "form.error":   "Нещо се обърка. Моля, опитайте отново.",
+
+  "home.stats.courts":     "Клей корта",  "home.stats.members":    "Члена",
+  "home.stats.experience": "Години опит",
+  "home.stats.coaches":    "Треньора",
+
+  "courts.tag":                 "Клей",
+  "courts.price.title":         "Цени и работно време",
+  "courts.price.hours.title":   "Работно време",
+  "courts.price.hours.detail":  "Понеделник – Неделя, 07:00 – 22:00",
+  "courts.price.cost.title":    "Цени",
+  "courts.price.clay_rate":     "Клей корт: 6 €/час",
+  "courts.price.res.title":     "Резервации",
+  "courts.price.res.detail":    "Онлайн или по телефон. Отмяна до 2 часа преди началото.",
+
+  "res.select_time":  "— Изберете час —",
+  "res.courts_label": "Кортове",
+  "res.courts_all":   "Корт 1, 2 & 3",
+  "res.courts_rate":  "Клей — 6 €/час",
+  "res.tip.title":    "💡 Съвет",
+  "res.tip.text":     "Членовете на клуба имат приоритетни резервации до 7 дни напред.",
+  "res.tip.link":     "Научи повече за членството →",
+
+  "months.jan": "Януари", "months.feb": "Февруари", "months.mar": "Март",
+  "months.apr": "Април",  "months.may": "Май",       "months.jun": "Юни",
+  "months.jul": "Юли",    "months.aug": "Август",    "months.sep": "Септември",
+  "months.oct": "Октомври","months.nov": "Ноември",  "months.dec": "Декември",
+  "months.MAY": "МАЙ",    "months.JUN": "ЮНИ",
+
+  "tour.select_event":     "— Изберете турнир —",
+  "tour.spring_2026":      "Пролетен Градски Турнир 2026 (12 май)",
+  "tour.kids_2026":        "Детски Турнир до 12 год. (26 май)",
+  "tour.mixed_2026":       "Двойки микст — Лятно издание (14 юни)",
+  "tour.col.tournament":   "Турнир",
+  "tour.col.category":     "Категория",
+  "tour.cat.men_single":   "Мъже единично",
+  "tour.cat.women_single": "Жени единично",
+  "tour.cat.men_double":   "Мъже двойки",
+  "tour.cat.mixed":        "Микст двойки",
+  "tour.cat.kids_u12":     "Деца до 12 год.",
+  "tour.cat.kids_u16":     "Деца до 16 год.",
+  "tour.venue":            "ТК Пазарджик",
+  "tour.cups_medals":      "Купи и медали",
+
+  "contact.select_subject":  "— Изберете тема —",
+  "contact.subj.reservation":"Резервация",
+  "contact.subj.membership": "Членство",
+  "contact.subj.kids":       "Детски тренировки",
+  "contact.subj.tournament": "Турнири",
+  "contact.subj.other":      "Друго",
+  "contact.label.address":   "Адрес",
+  "contact.label.phone":     "Телефон",
+  "contact.label.email":     "Имейл",
+  "contact.label.hours":     "Работно време",
+  "contact.open_maps":       "🗺️ Отвори в Google Maps",
+
+  "about.cta.h":    "Готови ли сте да заиграете?",
+  "about.cta.text": "Резервирайте корт или се запишете за членство — само с няколко клика.",
+
+  "mem.cta.text": "Свържете се с нас за повече информация или изпратете запитване директно.",
+
+  "footer.col.club":      "Клуб",
+  "footer.col.services":  "Услуги"
 }
