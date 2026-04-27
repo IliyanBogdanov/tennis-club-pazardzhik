@@ -177,6 +177,47 @@
     });
   }
 
+  // ---- FAQ Accordion ----
+  function initFAQ() {
+    document.querySelectorAll('.faq__question').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('.faq__item');
+        const isOpen = item.classList.contains('open');
+        // Close all
+        document.querySelectorAll('.faq__item.open').forEach(i => i.classList.remove('open'));
+        // Open clicked if it was closed
+        if (!isOpen) item.classList.add('open');
+      });
+    });
+  }
+
+  // ---- Floating Book Button ----
+  function initFloatBook() {
+    const btn = document.createElement('a');
+    btn.href = 'reservations.html';
+    btn.className = 'float-book';
+    btn.setAttribute('aria-label', 'Резервирай корт');
+    btn.innerHTML = '🎾 <span class="float-book__label">Резервирай</span>';
+    document.body.appendChild(btn);
+
+    // Show after scrolling past first viewport height
+    window.addEventListener('scroll', () => {
+      btn.classList.toggle('visible', window.scrollY > window.innerHeight * 0.6);
+    }, { passive: true });
+  }
+
+  // ---- Quick Book: set today as default date ----
+  function initQuickBook() {
+    const dateInput = document.getElementById('qb-date');
+    if (!dateInput) return;
+    const today = new Date();
+    const yyyy = today.getFullYear();
+    const mm   = String(today.getMonth() + 1).padStart(2, '0');
+    const dd   = String(today.getDate()).padStart(2, '0');
+    dateInput.value = `${yyyy}-${mm}-${dd}`;
+    dateInput.min   = `${yyyy}-${mm}-${dd}`;
+  }
+
   // ---- Init all ----
   function init() {
     initMobileNav();
@@ -187,6 +228,9 @@
     initForms();
     initSmoothScroll();
     initScrollReveal();
+    initFAQ();
+    initFloatBook();
+    initQuickBook();
   }
 
   if (document.readyState === 'loading') {

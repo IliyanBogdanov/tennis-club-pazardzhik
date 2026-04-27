@@ -17,10 +17,11 @@
       min-height: 100vh;
       background: url('assets/images/courts-cover.jpg') center center / cover no-repeat;
       display: flex;
-      align-items: center;
+      align-items: flex-start;
+      padding-top: calc(var(--nav-height) + 64px);
+      padding-bottom: 80px;
       position: relative;
       overflow: hidden;
-      padding-top: var(--nav-height);
     }
     .hero::before {
       content: '';
@@ -122,6 +123,41 @@
         <a href="reservations.html" class="btn btn--primary btn--lg" data-i18n="btn.book">Резервирай корт</a>
         <a href="membership.html"   class="btn btn--white-outline btn--lg" data-i18n="btn.join">Стани член</a>
       </div>
+
+      <!-- Quick Booking Widget -->
+      <div class="hero__quick-book">
+        <div class="quick-book__label" data-i18n="home.qbook.label">⚡ Бърза резервация</div>
+        <div class="quick-book__fields">
+          <div class="quick-book__field">
+            <label data-i18n="home.qbook.court">Корт</label>
+            <select id="qb-court">
+              <option value="1">Корт 1 — Клей</option>
+              <option value="2">Корт 2 — Клей</option>
+              <option value="3">Корт 3 — Клей</option>
+            </select>
+          </div>
+          <div class="quick-book__field">
+            <label data-i18n="home.qbook.date">Дата</label>
+            <input type="date" id="qb-date">
+          </div>
+          <div class="quick-book__field">
+            <label data-i18n="home.qbook.time">Час</label>
+            <select id="qb-time">
+              <option>09:00</option>
+              <option>10:00</option>
+              <option>11:00</option>
+              <option>12:00</option>
+              <option>15:00</option>
+              <option>16:00</option>
+              <option>17:00</option>
+              <option>18:00</option>
+              <option>19:00</option>
+              <option>20:00</option>
+            </select>
+          </div>
+          <a href="reservations.html" id="qb-submit" class="btn btn--primary quick-book__btn" data-i18n="home.qbook.btn">Провери →</a>
+        </div>
+      </div>
     </div>
   </div>
   <div class="hero__scroll">▼</div>
@@ -165,6 +201,39 @@
         <div class="feature-card__icon">🏅</div>
         <h3 data-i18n="home.feat4.title">Гъвкаво членство</h3>
         <p  data-i18n="home.feat4.text">Индивидуални, семейни и групови планове на достъпни цени.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- KIDS SECTION -->
+<section class="section kids-section">
+  <div class="container">
+    <div class="kids-section__inner">
+      <div class="kids-section__text">
+        <div class="kids-section__eyebrow" data-i18n="home.kids.eyebrow">За деца 4–16 г.</div>
+        <h2 data-i18n="home.kids.h">Детски тренировки</h2>
+        <p data-i18n="home.kids.text">Записвайте децата си при опитни треньори — групови занятия всяка седмица, индивидуален подход и проследяване на прогреса.</p>
+        <ul class="kids-section__list">
+          <li>✅ <span data-i18n="home.kids.li1">Треньорите следят всяко дете индивидуално</span></li>
+          <li>✅ <span data-i18n="home.kids.li2">Малки групи — максимум 8 деца</span></li>
+          <li>✅ <span data-i18n="home.kids.li3">Тренировки вторник и четвъртък, 18:30 ч.</span></li>
+          <li>✅ <span data-i18n="home.kids.li4">Безопасна и приятелска среда</span></li>
+          <li>✅ <span data-i18n="home.kids.li5">Зона за родители с гледка към кортовете</span></li>
+        </ul>
+        <a href="contact.html" class="btn btn--white btn--lg" data-i18n="home.kids.cta">Запиши детето си →</a>
+      </div>
+      <div class="kids-section__price-card">
+        <div class="kids-section__price-icon">🎾</div>
+        <div class="kids-section__price-title" data-i18n="home.kids.card.title">Детска група</div>
+        <div class="kids-section__price-amount"><span>8</span><em>€</em></div>
+        <div class="kids-section__price-sub" data-i18n="home.kids.card.sub">на посещение</div>
+        <div class="kids-section__price-info">
+          <div>📅 <span data-i18n="home.kids.card.info1">Вт & Чет, 18:30 ч.</span></div>
+          <div>👦 <span data-i18n="home.kids.card.info2">Деца 4–16 г.</span></div>
+          <div>👨‍🏫 <span data-i18n="home.kids.card.info3">Треньор включен</span></div>
+        </div>
+        <a href="contact.html" class="btn btn--join-kids" data-i18n="home.kids.card.btn">Запиши се сега</a>
       </div>
     </div>
   </div>

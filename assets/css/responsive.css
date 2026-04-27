@@ -97,3 +97,25 @@
 @media (min-width: 1400px) {
   :root { --max-width: 1320px; }
 }
+
+/* ---- Quick-book & new components: tablet ---- */
+@media (max-width: 900px) {
+  .quick-book__fields { grid-template-columns: 1fr 1fr; }
+  .quick-book__btn    { grid-column: span 2; justify-content: center; }
+
+  .kids-section__inner { grid-template-columns: 1fr; gap: 40px; }
+  .kids-section__price-card { max-width: 400px; }
+
+  .why-join__grid { grid-template-columns: 1fr; gap: 16px; }
+}
+
+@media (max-width: 480px) {
+  .quick-book__fields { grid-template-columns: 1fr; }
+  .quick-book__btn    { grid-column: auto; }
+
+  .hero__quick-book { padding: 16px; margin-top: 24px; }
+
+  /* Hide float-book label on very small screens, show only icon */
+  .float-book .float-book__label { display: none; }
+  .float-book { padding: 13px 16px; }
+}
