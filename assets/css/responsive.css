@@ -1,0 +1,99 @@
+/* ============================================
+   ТЕНИС КЛУБ ПАЗАРДЖИК — Responsive
+   ============================================ */
+
+/* ---- Tablet: ≤ 1024px ---- */
+@media (max-width: 1024px) {
+  .navbar__links { gap: 2px; }
+  .navbar__links a { padding: 6px 7px; font-size: 0.82rem; }
+
+  .grid-4 { grid-template-columns: repeat(2, 1fr); }
+
+  .footer__grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+
+  .stats-row { flex-wrap: wrap; }
+  .stat { min-width: 50%; border-right: none; border-bottom: 1px solid rgba(255,255,255,0.15); }
+  .stat:nth-child(odd) { border-right: 1px solid rgba(255,255,255,0.15); }
+
+  .pricing-card--featured { transform: scale(1.01); }
+
+  .gallery-grid { columns: 2; }
+}
+
+/* ---- Tablet portrait: ≤ 768px ---- */
+@media (max-width: 768px) {
+  :root { --nav-height: 64px; }
+
+  .navbar__links,
+  .navbar__actions .btn { display: none; }
+  .navbar__hamburger { display: flex; }
+  .navbar__actions .lang-btn { display: flex; }
+
+  .section { padding: 56px 0; }
+
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.6rem; }
+
+  .grid-2,
+  .grid-3,
+  .grid-4 { grid-template-columns: 1fr; }
+
+  .form-row { grid-template-columns: 1fr; }
+
+  .page-hero { padding: 80px 0 48px; }
+
+  .footer__grid { grid-template-columns: 1fr; gap: 28px; }
+  .footer__bottom { flex-direction: column; text-align: center; }
+
+  .stats-row { flex-direction: column; }
+  .stat { border-right: none !important; border-bottom: 1px solid rgba(255,255,255,0.15); }
+  .stat:last-child { border-bottom: none; }
+
+  .pricing-card--featured { transform: none; }
+
+  .gallery-grid { columns: 2; }
+
+  .tournament-card { flex-direction: column; align-items: flex-start; }
+
+  .section__header { margin-bottom: 36px; }
+
+  .hero__actions { flex-direction: column; align-items: stretch; }
+  .hero__actions .btn { justify-content: center; }
+
+  .lightbox__content { width: 95vw; }
+  .lightbox__nav { padding: 8px 12px; font-size: 1.2rem; }
+}
+
+/* ---- Mobile: ≤ 480px ---- */
+@media (max-width: 480px) {
+  .container { padding: 0 16px; }
+
+  .gallery-grid { columns: 1; }
+
+  .filter-tabs { gap: 6px; }
+  .filter-tab { padding: 6px 14px; font-size: 0.82rem; }
+
+  .btn { padding: 10px 18px; font-size: 0.88rem; }
+  .btn--lg { padding: 13px 24px; font-size: 0.95rem; }
+
+  .pricing-card { padding: 28px 20px; }
+
+  .results-table { font-size: 0.8rem; }
+  .results-table th,
+  .results-table td { padding: 9px 10px; }
+}
+
+/* ---- Inline-grid overrides for content pages ---- */
+@media (max-width: 768px) {
+  /* about.html story section */
+  .section [style*="grid-template-columns:1fr 1fr"],
+  /* reservations & contact 2-col layouts */
+  .section [style*="grid-template-columns:1.5fr 1fr"] {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* ---- Large screens: ≥ 1400px ---- */
+@media (min-width: 1400px) {
+  :root { --max-width: 1320px; }
+}

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Членство — Тенис Клуб Пазарджик</title>
+  <meta name="description" content="Планове за членство в Тенис Клуб Пазарджик — индивидуални, семейни и детски.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="navbar__inner">
+    <a href="index.html" class="navbar__logo">
+      <img src="assets/images/club-logo.jpg" alt="ТК Пазарджик" class="navbar__logo-icon" style="width:40px;height:40px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,255,255,0.3);">
+      <span>ТК Пазарджик</span>
+    </a>
+    <div class="navbar__links">
+      <a href="index.html"        data-i18n="nav.home">Начало</a>
+      <a href="about.html"        data-i18n="nav.about">За клуба</a>
+      <a href="courts.html"       data-i18n="nav.courts">Кортове</a>
+      <a href="reservations.html" data-i18n="nav.reservations">Резервации</a>
+      <a href="membership.html"   data-i18n="nav.membership">Членство</a>
+      <a href="tournaments.html"  data-i18n="nav.tournaments">Турнири</a>
+      <a href="news.html"         data-i18n="nav.news">Новини</a>
+      <a href="gallery.html"      data-i18n="nav.gallery">Галерия</a>
+      <a href="contact.html"      data-i18n="nav.contact">Контакти</a>
+    </div>
+    <div class="navbar__actions">
+      <button class="lang-btn" onclick="window.tcpzLang.switchLang()">EN</button>
+      <a href="reservations.html" class="btn btn--primary btn--sm" data-i18n="btn.book">Резервирай</a>
+    </div>
+    <button class="navbar__hamburger" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="navbar__mobile">
+    <a href="index.html"        data-i18n="nav.home">Начало</a>
+    <a href="about.html"        data-i18n="nav.about">За клуба</a>
+    <a href="courts.html"       data-i18n="nav.courts">Кортове</a>
+    <a href="reservations.html" data-i18n="nav.reservations">Резервации</a>
+    <a href="membership.html"   data-i18n="nav.membership">Членство</a>
+    <a href="tournaments.html"  data-i18n="nav.tournaments">Турнири</a>
+    <a href="news.html"         data-i18n="nav.news">Новини</a>
+    <a href="gallery.html"      data-i18n="nav.gallery">Галерия</a>
+    <a href="contact.html"      data-i18n="nav.contact">Контакти</a>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="container">
+    <h1 data-i18n="mem.hero.title">Членство</h1>
+    <p  data-i18n="mem.hero.sub">Присъединете се към клуба и се наслаждавайте на привилегии целогодишно.</p>
+    <div class="breadcrumb">
+      <a href="index.html" data-i18n="nav.home">Начало</a>
+      <span>/</span>
+      <span data-i18n="nav.membership">Членство</span>
+    </div>
+  </div>
+</div>
+
+<!-- PRICING PLANS -->
+<section class="section">
+  <div class="container">
+    <div class="section__header">
+      <h2 data-i18n="mem.plans.h">Изберете своя план</h2>
+    </div>
+    <div class="grid-4" style="align-items:start;">
+
+      <!-- Child group -->
+      <div class="pricing-card">
+        <div class="pricing-card__name">👦 <span data-i18n="mem.plan.child">Детска група</span></div>
+        <div class="pricing-card__price">8</div>
+        <div class="pricing-card__period" data-i18n="mem.per_visit">€ / посещение</div>
+        <ul class="pricing-card__features">
+          <li data-i18n="mem.b.kids.coach">Треньор включен</li>
+          <li data-i18n="mem.b.kids.schedule">Вт & Чет — 18:30 ч.</li>
+          <li data-i18n="mem.b.kids.age">Деца от 4 до 16 г.</li>
+          <li data-i18n="mem.b4">Участие в клубни турнири</li>
+        </ul>
+        <a href="contact.html" class="btn btn--secondary btn--full" data-i18n="mem.join_plan">Запиши се</a>
+      </div>
+
+      <!-- Adult group / Popular -->
+      <div class="pricing-card pricing-card--featured">
+        <div class="pricing-card__badge" data-i18n="mem.popular">Най-популярен</div>
+        <div class="pricing-card__name">👥 <span data-i18n="mem.plan.group">Групова тренировка</span></div>
+        <div class="pricing-card__price">10</div>
+        <div class="pricing-card__period" data-i18n="mem.per_visit">€ / посещение</div>
+        <ul class="pricing-card__features">
+          <li data-i18n="mem.b.group.coach">Треньор включен</li>
+          <li data-i18n="mem.b8">До 8 играча в групата</li>
+          <li data-i18n="mem.b4">Участие в клубни турнири</li>
+          <li data-i18n="mem.b2">Приоритетни резервации</li>
+        </ul>
+        <a href="contact.html" class="btn btn--primary btn--full" data-i18n="mem.join_plan">Запиши се</a>
+      </div>
+
+      <!-- Individual coaching -->
+      <div class="pricing-card">
+        <div class="pricing-card__name">🏃 <span data-i18n="mem.plan.adult">Индивидуална тренировка</span></div>
+        <div class="pricing-card__price">20</div>
+        <div class="pricing-card__period" data-i18n="mem.per_hour">€ / час</div>
+        <ul class="pricing-card__features">
+          <li data-i18n="mem.b.ind.coach">Личен треньор</li>
+          <li data-i18n="mem.b.ind.prog">Индивидуална програма</li>
+          <li data-i18n="mem.b.ind.time">По договаряне</li>
+          <li data-i18n="mem.b4">Участие в клубни турнири</li>
+        </ul>
+        <a href="contact.html" class="btn btn--secondary btn--full" data-i18n="mem.join_plan">Запиши се</a>
+      </div>
+
+      <!-- Family -->
+      <div class="pricing-card">
+        <div class="pricing-card__name">👨‍👩‍👧 <span data-i18n="mem.plan.family">Семейно членство</span></div>
+        <div class="pricing-card__price">55</div>
+        <div class="pricing-card__period" data-i18n="mem.per_month">€ / месец</div>
+        <ul class="pricing-card__features">
+          <li data-i18n="mem.b7">До 4 члена на семейство</li>
+          <li data-i18n="mem.b1">Неограничен достъп до кортове</li>
+          <li data-i18n="mem.b2">Приоритетни резервации</li>
+          <li data-i18n="mem.b4">Участие в клубни турнири</li>
+        </ul>
+        <a href="contact.html" class="btn btn--secondary btn--full" data-i18n="mem.join_plan">Запиши се</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFITS -->
+<section class="section section--gray">
+  <div class="container">
+    <div class="section__header">
+      <h2 data-i18n="mem.benefits.h">Предимства на членството</h2>
+    </div>
+    <div class="grid-2">
+      <div class="benefit-card">
+        <div class="benefit-card__icon">📅</div>
+        <div class="benefit-card__text">
+          <h4 data-i18n="mem.ben1.title">Приоритетни резервации</h4>
+          <p  data-i18n="mem.ben1.text">Резервирайте до 7 дни напред — преди неплатени играчи.</p>
+        </div>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-card__icon">🛒</div>
+        <div class="benefit-card__text">
+          <h4 data-i18n="mem.ben2.title">Отстъпки в магазина</h4>
+          <p  data-i18n="mem.ben2.text">10% постоянна отстъпка за всички стоки в клубния магазин.</p>
+        </div>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-card__icon">🏆</div>
+        <div class="benefit-card__text">
+          <h4 data-i18n="mem.ben3.title">Клубни турнири</h4>
+          <p  data-i18n="mem.ben3.text">Участие в затворени клубни турнири само за членове.</p>
+        </div>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-card__icon">👦</div>
+        <div class="benefit-card__text">
+          <h4 data-i18n="mem.ben4.title">Детски програми</h4>
+          <p  data-i18n="mem.ben4.text">Достъп до структурирани детски тренировки с квалифицирани треньори.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section section--green">
+  <div class="container text-center">
+    <h2 style="color:var(--white);">Готови ли сте да се присъедините?</h2>
+    <p style="color:rgba(255,255,255,0.8);max-width:480px;margin:12px auto 32px;">Свържете се с нас за повече информация или изпратете запитване директно.</p>
+    <a href="contact.html" class="btn btn--primary btn--lg" data-i18n="btn.join">Стани член</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <h3>🎾 ТК Пазарджик</h3>
+        <p data-i18n="footer.tagline">Спорт. Общност. Страст.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Клуб</h4>
+        <ul>
+          <li><a href="about.html"   data-i18n="nav.about">За клуба</a></li>
+          <li><a href="courts.html"  data-i18n="nav.courts">Кортове</a></li>
+          <li><a href="gallery.html" data-i18n="nav.gallery">Галерия</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Услуги</h4>
+        <ul>
+          <li><a href="reservations.html" data-i18n="nav.reservations">Резервации</a></li>
+          <li><a href="membership.html"   data-i18n="nav.membership">Членство</a></li>
+          <li><a href="tournaments.html"  data-i18n="nav.tournaments">Турнири</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4 data-i18n="nav.contact">Контакти</h4>
+        <ul>
+          <li><a href="contact.html"               data-i18n="footer.address">Мирянци, Пазарджик</a></li>
+          <li><a href="tel:+35988750534"            data-i18n="footer.phone">+359 88 750 0534</a></li>
+          <li><a href="mailto:silviatennis@mail.bg" data-i18n="footer.email">silviatennis@mail.bg</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p data-i18n="footer.copy">© 2026 Тенис Клуб Пазарджик. Всички права запазени.</p>
+      <div class="social-links">
+        <a href="https://www.facebook.com/p/%D0%A2%D0%B5%D0%BD%D0%B8%D1%81-%D0%9A%D0%BB%D1%83%D0%B1-%D0%9F%D0%B0%D0%B7%D0%B0%D1%80%D0%B4%D0%B6%D0%B8%D0%BA-100057644463052/" class="social-link" aria-label="Facebook" target="_blank" rel="noopener">f</a>
+        <a href="#" class="social-link" aria-label="Instagram">📷</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button id="scroll-top" aria-label="Scroll to top">↑</button>
+
+<script src="assets/js/lang.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Начало — Тенис Клуб Пазарджик</title>
+  <meta name="description" content="Тенис Клуб Пазарджик — онлайн резервации, членство, детски тренировки и турнири.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <style>
+    /* ---- Hero ---- */
+    .hero {
+      min-height: 100vh;
+      background: url('assets/images/courts-cover.jpg') center center / cover no-repeat;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      padding-top: var(--nav-height);
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(15,60,30,0.82) 0%, rgba(20,80,45,0.72) 60%, rgba(15,55,35,0.65) 100%);
+    }
+    .hero__content {
+      position: relative;
+      z-index: 1;
+      max-width: 680px;
+    }
+    .hero__eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.25);
+      border-radius: 24px;
+      padding: 6px 16px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: rgba(255,255,255,0.9);
+      margin-bottom: 24px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .hero h1 { color: var(--white); margin-bottom: 20px; }
+    .hero p   { color: rgba(255,255,255,0.8); font-size: 1.1rem; max-width: 520px; margin-bottom: 36px; }
+    .hero__actions { display: flex; gap: 14px; flex-wrap: wrap; }
+    .hero__scroll {
+      position: absolute;
+      bottom: 32px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: rgba(255,255,255,0.5);
+      font-size: 0.8rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      animation: bounce 2s infinite;
+    }
+    @keyframes bounce {
+      0%,100% { transform: translateX(-50%) translateY(0); }
+      50%      { transform: translateX(-50%) translateY(-8px); }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="navbar__inner">
+    <a href="index.html" class="navbar__logo">
+      <img src="assets/images/club-logo.jpg" alt="ТК Пазарджик" class="navbar__logo-icon" style="width:40px;height:40px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,255,255,0.3);">
+      <span>ТК Пазарджик</span>
+    </a>
+    <div class="navbar__links">
+      <a href="index.html"        data-i18n="nav.home">Начало</a>
+      <a href="about.html"        data-i18n="nav.about">За клуба</a>
+      <a href="courts.html"       data-i18n="nav.courts">Кортове</a>
+      <a href="reservations.html" data-i18n="nav.reservations">Резервации</a>
+      <a href="membership.html"   data-i18n="nav.membership">Членство</a>
+      <a href="tournaments.html"  data-i18n="nav.tournaments">Турнири</a>
+      <a href="news.html"         data-i18n="nav.news">Новини</a>
+      <a href="gallery.html"      data-i18n="nav.gallery">Галерия</a>
+      <a href="contact.html"      data-i18n="nav.contact">Контакти</a>
+    </div>
+    <div class="navbar__actions">
+      <button class="lang-btn" onclick="window.tcpzLang.switchLang()">EN</button>
+      <a href="reservations.html" class="btn btn--primary btn--sm" data-i18n="btn.book">Резервирай</a>
+    </div>
+    <button class="navbar__hamburger" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="navbar__mobile">
+    <a href="index.html"        data-i18n="nav.home">Начало</a>
+    <a href="about.html"        data-i18n="nav.about">За клуба</a>
+    <a href="courts.html"       data-i18n="nav.courts">Кортове</a>
+    <a href="reservations.html" data-i18n="nav.reservations">Резервации</a>
+    <a href="membership.html"   data-i18n="nav.membership">Членство</a>
+    <a href="tournaments.html"  data-i18n="nav.tournaments">Турнири</a>
+    <a href="news.html"         data-i18n="nav.news">Новини</a>
+    <a href="gallery.html"      data-i18n="nav.gallery">Галерия</a>
+    <a href="contact.html"      data-i18n="nav.contact">Контакти</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="hero__content">
+      <div class="hero__eyebrow">🏆 Пазарджик, България</div>
+      <h1 data-i18n="home.hero.title">Тенис Клуб Пазарджик</h1>
+      <p data-i18n="home.hero.subtitle">Добре дошли в нашия клуб — резервирайте корт, присъединете се към членство или запишете детето си на тренировки.</p>
+      <div class="hero__actions">
+        <a href="reservations.html" class="btn btn--primary btn--lg" data-i18n="btn.book">Резервирай корт</a>
+        <a href="membership.html"   class="btn btn--white-outline btn--lg" data-i18n="btn.join">Стани член</a>
+      </div>
+    </div>
+  </div>
+  <div class="hero__scroll">▼</div>
+</section>
+
+<!-- STATS -->
+<section class="section section--green" id="stats">
+  <div class="container">
+    <div class="stats-row">
+      <div class="stat"><div class="stat__number">3</div><div class="stat__label">Клей корта</div></div>
+      <div class="stat"><div class="stat__number">200+</div><div class="stat__label">Члена</div></div>
+      <div class="stat"><div class="stat__number">15+</div><div class="stat__label">Години опит</div></div>
+      <div class="stat"><div class="stat__number">3</div><div class="stat__label">Треньора</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="section" id="features">
+  <div class="container">
+    <div class="section__header">
+      <h2 data-i18n="home.features.h">Защо да изберете нас?</h2>
+    </div>
+    <div class="grid-4">
+      <div class="feature-card">
+        <div class="feature-card__icon">🎾</div>
+        <h3 data-i18n="home.feat1.title">3 Клей корта</h3>
+        <p  data-i18n="home.feat1.text">3 клей корта с LED осветление за вечерна игра.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__icon">📅</div>
+        <h3 data-i18n="home.feat2.title">Онлайн резервации</h3>
+        <p  data-i18n="home.feat2.text">Резервирайте своя час 24/7 – бързо, лесно, без телефонни обаждания.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__icon">👦</div>
+        <h3 data-i18n="home.feat3.title">Детски тренировки</h3>
+        <p  data-i18n="home.feat3.text">Квалифицирани треньори и програми за деца от 4 до 16 години.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__icon">🏅</div>
+        <h3 data-i18n="home.feat4.title">Гъвкаво членство</h3>
+        <p  data-i18n="home.feat4.text">Индивидуални, семейни и групови планове на достъпни цени.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWS PREVIEW -->
+<section class="section section--gray" id="news-preview">
+  <div class="container">
+    <div class="section__header">
+      <h2 data-i18n="home.news.h">Последни новини</h2>
+    </div>
+    <div class="grid-3">
+      <article class="card news-card">
+        <div class="card__body">
+          <span class="card__badge badge--orange">Турнири</span>
+          <p class="card__date">15 април 2026</p>
+          <h3 class="card__title">Пролетен турнир — резултати</h3>
+          <p class="card__text">Завърши нашият пролетен турнир. Поздравления на всички участници и победители!</p>
+          <a href="news.html" class="btn btn--secondary btn--sm" data-i18n="news.read_more">Прочети повече →</a>
+        </div>
+      </article>
+      <article class="card news-card">
+        <div class="card__body">
+          <span class="card__badge badge--green">Клуб</span>
+          <p class="card__date">2 март 2026</p>
+          <h3 class="card__title">Нова настилка на Корт 3</h3>
+          <p class="card__text">Обновихме клей настилката на Корт 3 с висококачествен материал от Испания.</p>
+          <a href="news.html" class="btn btn--secondary btn--sm" data-i18n="news.read_more">Прочети повече →</a>
+        </div>
+      </article>
+      <article class="card news-card">
+        <div class="card__body">
+          <span class="card__badge badge--green">Деца</span>
+          <p class="card__date">18 февруари 2026</p>
+          <h3 class="card__title">Нова детска група — записвания</h3>
+          <p class="card__text">Отваряме нова група за деца 6–10 г. Местата са ограничени — запишете се сега!</p>
+          <a href="news.html" class="btn btn--secondary btn--sm" data-i18n="news.read_more">Прочети повече →</a>
+        </div>
+      </article>
+    </div>
+    <div class="text-center mt-32">
+      <a href="news.html" class="btn btn--secondary" data-i18n="btn.all_news">Всички новини</a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section section--green">
+  <div class="container text-center">
+    <h2 data-i18n="home.cta.h">Готови ли сте да заиграете?</h2>
+    <p data-i18n="home.cta.text" style="color:rgba(255,255,255,0.8);font-size:1.1rem;max-width:500px;margin:12px auto 36px;">Резервирайте корт сега или разгледайте нашите планове за членство.</p>
+    <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
+      <a href="reservations.html" class="btn btn--primary btn--lg" data-i18n="btn.book">Резервирай корт</a>
+      <a href="membership.html"   class="btn btn--white-outline btn--lg" data-i18n="home.cta.btn2">Разгледай членствата</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <h3>🎾 ТК Пазарджик</h3>
+        <p data-i18n="footer.tagline">Спорт. Общност. Страст.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Клуб</h4>
+        <ul>
+          <li><a href="about.html"   data-i18n="nav.about">За клуба</a></li>
+          <li><a href="courts.html"  data-i18n="nav.courts">Кортове</a></li>
+          <li><a href="gallery.html" data-i18n="nav.gallery">Галерия</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Услуги</h4>
+        <ul>
+          <li><a href="reservations.html" data-i18n="nav.reservations">Резервации</a></li>
+          <li><a href="membership.html"   data-i18n="nav.membership">Членство</a></li>
+          <li><a href="tournaments.html"  data-i18n="nav.tournaments">Турнири</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4 data-i18n="nav.contact">Контакти</h4>
+        <ul>
+          <li><a href="contact.html"               data-i18n="footer.address">Мирянци, Пазарджик</a></li>
+          <li><a href="tel:+35988750534"            data-i18n="footer.phone">+359 88 750 0534</a></li>
+          <li><a href="mailto:silviatennis@mail.bg" data-i18n="footer.email">silviatennis@mail.bg</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p data-i18n="footer.copy">© 2026 Тенис Клуб Пазарджик. Всички права запазени.</p>
+      <div class="social-links">
+        <a href="https://www.facebook.com/p/%D0%A2%D0%B5%D0%BD%D0%B8%D1%81-%D0%9A%D0%BB%D1%83%D0%B1-%D0%9F%D0%B0%D0%B7%D0%B0%D1%80%D0%B4%D0%B6%D0%B8%D0%BA-100057644463052/" class="social-link" aria-label="Facebook" target="_blank" rel="noopener">f</a>
+        <a href="#" class="social-link" aria-label="Instagram">📷</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button id="scroll-top" aria-label="Scroll to top">↑</button>
+
+<script src="assets/js/lang.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

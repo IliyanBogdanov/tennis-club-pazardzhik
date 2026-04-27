@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Турнири — Тенис Клуб Пазарджик</title>
+  <meta name="description" content="Предстоящи и минали турнири на Тенис Клуб Пазарджик. Записвания онлайн.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="navbar__inner">
+    <a href="index.html" class="navbar__logo">
+      <img src="assets/images/club-logo.jpg" alt="ТК Пазарджик" class="navbar__logo-icon" style="width:40px;height:40px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,255,255,0.3);">
+      <span>ТК Пазарджик</span>
+    </a>
+    <div class="navbar__links">
+      <a href="index.html"        data-i18n="nav.home">Начало</a>
+      <a href="about.html"        data-i18n="nav.about">За клуба</a>
+      <a href="courts.html"       data-i18n="nav.courts">Кортове</a>
+      <a href="reservations.html" data-i18n="nav.reservations">Резервации</a>
+      <a href="membership.html"   data-i18n="nav.membership">Членство</a>
+      <a href="tournaments.html"  data-i18n="nav.tournaments">Турнири</a>
+      <a href="news.html"         data-i18n="nav.news">Новини</a>
+      <a href="gallery.html"      data-i18n="nav.gallery">Галерия</a>
+      <a href="contact.html"      data-i18n="nav.contact">Контакти</a>
+    </div>
+    <div class="navbar__actions">
+      <button class="lang-btn" onclick="window.tcpzLang.switchLang()">EN</button>
+      <a href="reservations.html" class="btn btn--primary btn--sm" data-i18n="btn.book">Резервирай</a>
+    </div>
+    <button class="navbar__hamburger" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="navbar__mobile">
+    <a href="index.html"        data-i18n="nav.home">Начало</a>
+    <a href="about.html"        data-i18n="nav.about">За клуба</a>
+    <a href="courts.html"       data-i18n="nav.courts">Кортове</a>
+    <a href="reservations.html" data-i18n="nav.reservations">Резервации</a>
+    <a href="membership.html"   data-i18n="nav.membership">Членство</a>
+    <a href="tournaments.html"  data-i18n="nav.tournaments">Турнири</a>
+    <a href="news.html"         data-i18n="nav.news">Новини</a>
+    <a href="gallery.html"      data-i18n="nav.gallery">Галерия</a>
+    <a href="contact.html"      data-i18n="nav.contact">Контакти</a>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="container">
+    <h1 data-i18n="tour.hero.title">Турнири</h1>
+    <p  data-i18n="tour.hero.sub">Следете предстоящите турнири, записвайте се и следете резултатите.</p>
+    <div class="breadcrumb">
+      <a href="index.html" data-i18n="nav.home">Начало</a>
+      <span>/</span>
+      <span data-i18n="nav.tournaments">Турнири</span>
+    </div>
+  </div>
+</div>
+
+<!-- UPCOMING TOURNAMENTS -->
+<section class="section">
+  <div class="container">
+    <h2 data-i18n="tour.upcoming.h" style="margin-bottom:32px;">Предстоящи турнири</h2>
+    <div style="display:flex;flex-direction:column;gap:16px;">
+
+      <div class="tournament-card">
+        <div class="tournament-card__date">
+          <div class="tournament-card__date-day">12</div>
+          <div class="tournament-card__date-month">МАЙ</div>
+        </div>
+        <div class="tournament-card__info">
+          <div class="tournament-card__name">🏆 Пролетен Градски Турнир 2026</div>
+          <div class="tournament-card__meta">
+            <span>📍 ТК Пазарджик</span>
+            <span>👥 Мъже единично</span>
+            <span>💰 256 € награден фонд</span>
+            <span style="color:var(--green);">✅ 8 <span data-i18n="tour.spots">свободни места</span></span>
+          </div>
+        </div>
+        <a href="#register" class="btn btn--primary btn--sm" data-i18n="btn.register">Запиши се</a>
+      </div>
+
+      <div class="tournament-card">
+        <div class="tournament-card__date">
+          <div class="tournament-card__date-day">26</div>
+          <div class="tournament-card__date-month">МАЙ</div>
+        </div>
+        <div class="tournament-card__info">
+          <div class="tournament-card__name">👦 Детски Турнир — до 12 год.</div>
+          <div class="tournament-card__meta">
+            <span>📍 ТК Пазарджик</span>
+            <span>👥 Деца до 12 год.</span>
+            <span>🎁 Купи и медали</span>
+            <span style="color:var(--orange);">⏳ 4 <span data-i18n="tour.spots">свободни места</span></span>
+          </div>
+        </div>
+        <a href="#register" class="btn btn--primary btn--sm" data-i18n="btn.register">Запиши се</a>
+      </div>
+
+      <div class="tournament-card">
+        <div class="tournament-card__date">
+          <div class="tournament-card__date-day">14</div>
+          <div class="tournament-card__date-month">ЮНИ</div>
+        </div>
+        <div class="tournament-card__info">
+          <div class="tournament-card__name">🤝 Двойки микст — Лятно издание</div>
+          <div class="tournament-card__meta">
+            <span>📍 ТК Пазарджик</span>
+            <span>👫 Микст двойки</span>
+            <span>💰 153 € награден фонд</span>
+            <span style="color:var(--green);">✅ 12 <span data-i18n="tour.spots">свободни места</span></span>
+          </div>
+        </div>
+        <a href="#register" class="btn btn--primary btn--sm" data-i18n="btn.register">Запиши се</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REGISTER FORM -->
+<section class="section section--gray" id="register">
+  <div class="container">
+    <div style="max-width:600px;margin:0 auto;">
+      <div style="background:var(--white);border-radius:var(--radius-lg);box-shadow:var(--shadow-md);padding:40px;">
+        <h2 data-i18n="tour.register.h" style="margin-bottom:28px;">Запиши се за турнир</h2>
+        <form data-form="tournament" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label data-i18n="tour.reg.name">Вашето име</label>
+              <input type="text" name="name" required placeholder="Иван Иванов">
+            </div>
+            <div class="form-group">
+              <label data-i18n="tour.reg.phone">Телефон</label>
+              <input type="tel" name="phone" required placeholder="+359...">
+            </div>
+          </div>
+          <div class="form-group">
+            <label data-i18n="tour.reg.email">Имейл</label>
+            <input type="email" name="email" required placeholder="email@example.com">
+          </div>
+          <div class="form-group">
+            <label data-i18n="tour.reg.event">Турнир</label>
+            <select name="event" required>
+              <option value="">— Изберете турнир —</option>
+              <option value="spring2026">Пролетен Градски Турнир 2026 (12 май)</option>
+              <option value="kids2026">Детски Турнир до 12 год. (26 май)</option>
+              <option value="mixed2026">Двойки микст — Лятно издание (14 юни)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label data-i18n="tour.reg.category">Категория</label>
+            <select name="category">
+              <option value="men-single">Мъже единично</option>
+              <option value="women-single">Жени единично</option>
+              <option value="men-double">Мъже двойки</option>
+              <option value="mixed">Микст двойки</option>
+              <option value="kids-u12">Деца до 12 год.</option>
+              <option value="kids-u16">Деца до 16 год.</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full btn--lg" data-i18n="tour.reg.submit">Изпрати записване</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PAST RESULTS -->
+<section class="section">
+  <div class="container">
+    <h2 data-i18n="tour.past.h" style="margin-bottom:28px;">Минали резултати</h2>
+    <div style="overflow-x:auto;">
+      <table class="results-table">
+        <thead>
+          <tr>
+            <th data-i18n="tour.date">Дата</th>
+            <th>Турнир</th>
+            <th>Категория</th>
+            <th data-i18n="tour.winner">Победител</th>
+            <th data-i18n="tour.prize">Награда</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Април 2026</td>
+            <td>Великденски турнир</td>
+            <td>Мъже единично</td>
+            <td>🥇 Петър Стоянов</td>
+            <td>153 €</td>
+          </tr>
+          <tr>
+            <td>Март 2026</td>
+            <td>Зимен турнир — Зала</td>
+            <td>Микст двойки</td>
+            <td>🥇 Ана Г. / Тодор П.</td>
+            <td>102 €</td>
+          </tr>
+          <tr>
+            <td>Ноември 2025</td>
+            <td>Есенен турнир 2025</td>
+            <td>Мъже единично</td>
+            <td>🥇 Иван Петров</td>
+            <td>256 €</td>
+          </tr>
+          <tr>
+            <td>Септември 2025</td>
+            <td>Детски купон — лято</td>
+            <td>Деца до 12 год.</td>
+            <td>🥇 Мартин Д.</td>
+            <td>Купа + медал</td>
+          </tr>
+          <tr>
+            <td>Май 2025</td>
+            <td>Пролетен Градски Турнир</td>
+            <td>Мъже единично</td>
+            <td>🥇 Стефан Колев</td>
+            <td>256 €</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <h3>🎾 ТК Пазарджик</h3>
+        <p data-i18n="footer.tagline">Спорт. Общност. Страст.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Клуб</h4>
+        <ul>
+          <li><a href="about.html"   data-i18n="nav.about">За клуба</a></li>
+          <li><a href="courts.html"  data-i18n="nav.courts">Кортове</a></li>
+          <li><a href="gallery.html" data-i18n="nav.gallery">Галерия</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Услуги</h4>
+        <ul>
+          <li><a href="reservations.html" data-i18n="nav.reservations">Резервации</a></li>
+          <li><a href="membership.html"   data-i18n="nav.membership">Членство</a></li>
+          <li><a href="tournaments.html"  data-i18n="nav.tournaments">Турнири</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4 data-i18n="nav.contact">Контакти</h4>
+        <ul>
+          <li><a href="contact.html"               data-i18n="footer.address">Мирянци, Пазарджик</a></li>
+          <li><a href="tel:+35988750534"            data-i18n="footer.phone">+359 88 750 0534</a></li>
+          <li><a href="mailto:silviatennis@mail.bg" data-i18n="footer.email">silviatennis@mail.bg</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p data-i18n="footer.copy">© 2026 Тенис Клуб Пазарджик. Всички права запазени.</p>
+      <div class="social-links">
+        <a href="https://www.facebook.com/p/%D0%A2%D0%B5%D0%BD%D0%B8%D1%81-%D0%9A%D0%BB%D1%83%D0%B1-%D0%9F%D0%B0%D0%B7%D0%B0%D1%80%D0%B4%D0%B6%D0%B8%D0%BA-100057644463052/" class="social-link" aria-label="Facebook" target="_blank" rel="noopener">f</a>
+        <a href="#" class="social-link" aria-label="Instagram">📷</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button id="scroll-top" aria-label="Scroll to top">↑</button>
+
+<script src="assets/js/lang.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

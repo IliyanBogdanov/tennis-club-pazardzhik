@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Новини — Тенис Клуб Пазарджик</title>
+  <meta name="description" content="Актуални новини от Тенис Клуб Пазарджик.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="navbar__inner">
+    <a href="index.html" class="navbar__logo">
+      <img src="assets/images/club-logo.jpg" alt="ТК Пазарджик" class="navbar__logo-icon" style="width:40px;height:40px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,255,255,0.3);">
+      <span>ТК Пазарджик</span>
+    </a>
+    <div class="navbar__links">
+      <a href="index.html"        data-i18n="nav.home">Начало</a>
+      <a href="about.html"        data-i18n="nav.about">За клуба</a>
+      <a href="courts.html"       data-i18n="nav.courts">Кортове</a>
+      <a href="reservations.html" data-i18n="nav.reservations">Резервации</a>
+      <a href="membership.html"   data-i18n="nav.membership">Членство</a>
+      <a href="tournaments.html"  data-i18n="nav.tournaments">Турнири</a>
+      <a href="news.html"         data-i18n="nav.news">Новини</a>
+      <a href="gallery.html"      data-i18n="nav.gallery">Галерия</a>
+      <a href="contact.html"      data-i18n="nav.contact">Контакти</a>
+    </div>
+    <div class="navbar__actions">
+      <button class="lang-btn" onclick="window.tcpzLang.switchLang()">EN</button>
+      <a href="reservations.html" class="btn btn--primary btn--sm" data-i18n="btn.book">Резервирай</a>
+    </div>
+    <button class="navbar__hamburger" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="navbar__mobile">
+    <a href="index.html"        data-i18n="nav.home">Начало</a>
+    <a href="about.html"        data-i18n="nav.about">За клуба</a>
+    <a href="courts.html"       data-i18n="nav.courts">Кортове</a>
+    <a href="reservations.html" data-i18n="nav.reservations">Резервации</a>
+    <a href="membership.html"   data-i18n="nav.membership">Членство</a>
+    <a href="tournaments.html"  data-i18n="nav.tournaments">Турнири</a>
+    <a href="news.html"         data-i18n="nav.news">Новини</a>
+    <a href="gallery.html"      data-i18n="nav.gallery">Галерия</a>
+    <a href="contact.html"      data-i18n="nav.contact">Контакти</a>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="container">
+    <h1 data-i18n="news.hero.title">Новини</h1>
+    <p  data-i18n="news.hero.sub">Актуална информация от Тенис Клуб Пазарджик.</p>
+    <div class="breadcrumb">
+      <a href="index.html" data-i18n="nav.home">Начало</a>
+      <span>/</span>
+      <span data-i18n="nav.news">Новини</span>
+    </div>
+  </div>
+</div>
+
+<!-- NEWS GRID -->
+<section class="section">
+  <div class="container">
+    <div class="grid-3">
+
+      <article class="card news-card">
+        <div class="card__body">
+          <span class="card__badge badge--orange">Турнири</span>
+          <p class="card__date">15 април 2026</p>
+          <h3 class="card__title">Пролетен турнир 2026 — резултати</h3>
+          <p class="card__text">Завърши нашият пролетен турнир с 32 участника. Победител в мъжкото единично — Петър Стоянов. Поздравления на всички участници!</p>
+          <a href="#" class="btn btn--secondary btn--sm" data-i18n="news.read_more">Прочети повече →</a>
+        </div>
+      </article>
+
+      <article class="card news-card">
+        <div class="card__body">
+          <span class="card__badge badge--green">Клуб</span>
+          <p class="card__date">2 март 2026</p>
+          <h3 class="card__title">Нова настилка на Корт 3</h3>
+          <p class="card__text">Обновихме клей настилката на Корт 3 с висококачествен материал от Испания. Кортът е с по-добро отводняване и по-бърза изсушаване.</p>
+          <a href="#" class="btn btn--secondary btn--sm" data-i18n="news.read_more">Прочети повече →</a>
+        </div>
+      </article>
+
+      <article class="card news-card">
+        <div class="card__body">
+          <span class="card__badge badge--green">Деца</span>
+          <p class="card__date">18 февруари 2026</p>
+          <h3 class="card__title">Нова детска група — записвания отворени</h3>
+          <p class="card__text">Отваряме нова група за деца от 6 до 10 години. Тренировките са всеки вторник и четвъртък от 18:30 ч. Местата са ограничени!</p>
+          <a href="#" class="btn btn--secondary btn--sm" data-i18n="news.read_more">Прочети повече →</a>
+        </div>
+      </article>
+
+      <article class="card news-card">
+        <div class="card__body">
+          <span class="card__badge badge--green">Клуб</span>
+          <p class="card__date">5 януари 2026</p>
+          <h3 class="card__title">LED осветление на всички кортове</h3>
+          <p class="card__text">Завършихме монтажа на LED осветление на всичките 3 корта. Вечерната игра е значително по-приятна с новото осветление.</p>
+          <a href="#" class="btn btn--secondary btn--sm" data-i18n="news.read_more">Прочети повече →</a>
+        </div>
+      </article>
+
+      <article class="card news-card">
+        <div class="card__body">
+          <span class="card__badge badge--orange">Турнири</span>
+          <p class="card__date">22 декември 2025</p>
+          <h3 class="card__title">Коледен турнир — снимки и резултати</h3>
+          <p class="card__text">Вижте резултати от нашия традиционен коледен турнир. Приятна атмосфера, много игра и коледни изненади!</p>
+          <a href="#" class="btn btn--secondary btn--sm" data-i18n="news.read_more">Прочети повече →</a>
+        </div>
+      </article>
+
+      <article class="card news-card">
+        <div class="card__body">
+          <span class="card__badge badge--orange">Сезон</span>
+          <p class="card__date">1 ноември 2025</p>
+          <h3 class="card__title">Зимен сезон 2025–2026</h3>
+          <p class="card__text">Кортовете работят до края на октомври. За зимни тренировки следете страницата ни за актуална информация.</p>
+          <a href="#" class="btn btn--secondary btn--sm" data-i18n="news.read_more">Прочети повече →</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <h3>🎾 ТК Пазарджик</h3>
+        <p data-i18n="footer.tagline">Спорт. Общност. Страст.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Клуб</h4>
+        <ul>
+          <li><a href="about.html"   data-i18n="nav.about">За клуба</a></li>
+          <li><a href="courts.html"  data-i18n="nav.courts">Кортове</a></li>
+          <li><a href="gallery.html" data-i18n="nav.gallery">Галерия</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Услуги</h4>
+        <ul>
+          <li><a href="reservations.html" data-i18n="nav.reservations">Резервации</a></li>
+          <li><a href="membership.html"   data-i18n="nav.membership">Членство</a></li>
+          <li><a href="tournaments.html"  data-i18n="nav.tournaments">Турнири</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4 data-i18n="nav.contact">Контакти</h4>
+        <ul>
+          <li><a href="contact.html"               data-i18n="footer.address">Мирянци, Пазарджик</a></li>
+          <li><a href="tel:+35988750534"            data-i18n="footer.phone">+359 88 750 0534</a></li>
+          <li><a href="mailto:silviatennis@mail.bg" data-i18n="footer.email">silviatennis@mail.bg</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p data-i18n="footer.copy">© 2026 Тенис Клуб Пазарджик. Всички права запазени.</p>
+      <div class="social-links">
+        <a href="https://www.facebook.com/p/%D0%A2%D0%B5%D0%BD%D0%B8%D1%81-%D0%9A%D0%BB%D1%83%D0%B1-%D0%9F%D0%B0%D0%B7%D0%B0%D1%80%D0%B4%D0%B6%D0%B8%D0%BA-100057644463052/" class="social-link" aria-label="Facebook" target="_blank" rel="noopener">f</a>
+        <a href="#" class="social-link" aria-label="Instagram">📷</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button id="scroll-top" aria-label="Scroll to top">↑</button>
+
+<script src="assets/js/lang.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
