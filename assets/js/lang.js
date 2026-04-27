@@ -20,7 +20,7 @@
   }
 
   async function loadTranslations(lang) {
-    const res = await fetch(`/lang/${lang}.json`);
+    const res = await fetch(`lang/${lang}.json`);
     if (!res.ok) throw new Error(`Failed to load ${lang}.json`);
     return res.json();
   }
